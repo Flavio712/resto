@@ -5,6 +5,63 @@
     font-family: sans-serif;
 }
 
+#titulo {
+    font-size: 100px;
+    padding: 40px;
+}
+
+#barraDeNavegacion {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.btn-nav {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
 body {
-    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    max-width: 1000px;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.entradas {
+    border-radius: 1rem;
+    width: 300px;
+    height: 250px;
+    padding: .5rem;
+    margin: 0 auto;
+}
+
+.principal {
+    border-radius: 1rem;
+    width: 300px;
+    height: 250px;
+    padding: .5rem;
+    margin: 0 auto;
+}
+
+.bebidas {
+    border-radius: 1rem;
+    width: 300px;
+    height: 250px;
+    padding: .5rem;
+    margin: 0 auto;
+}
+
+.postres {
+    border-radius: 1rem;
+    width: 300px;
+    height: 250px;
+    padding: .5rem;
+    margin: 0 auto;
 }
