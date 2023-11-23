@@ -2,31 +2,205 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/main.css" rel="stylesheet">
     <title>Obligado Resto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <h1 id="titulo">Obligado Resto</h1>
-    <nav id="barraDeNavegacion">
-        <button class="btn-nav">Entradas</button>
-        <button class="btn-nav">Principal</button>
-        <button class="btn-nav">Postres</button>
-        <button class="btn-nav">Bebidas</button>
-    </nav>
-    <img class="entradas" src="img/entradas/bastones de mozzarella.png">
-    <img class="entradas" src="img/entradas/nachos.png">
-    <img class="entradas" src="img/entradas/rabas.png">
-    <img class="principal" src="img/principal/costillar.png">
-    <img class="principal" src="img/principal/wrap.png">
-    <img class="principal" src="img/principal/ñoquis.png">
-    <img class="bebidas" src="img/bebidas/cervezas.png">
-    <img class="bebidas" src="img/bebidas/gaseosas.png">
-    <img class="bebidas" src="img/bebidas/vinos.png">
-    <img class="postres" src="img/postres/cheesecake.png">
-    <img class="postres" src="img/postres/mousse de chocolate.png">
-    <img class="postres" src="img/postres/red velvet.png">
-    <footer>Dirección: Emilio lamarca 2062 Tel. 1128321943</footer>
-    <script href="js/main.js"></script>
+    <header>
+        <img class="logo" src="./img/logo.png" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li class="nav-item"><button class="btn-header" id="btn-menú">Menu</button></li>
+                <li class="nav-item"><button class="btn-header" id="btn-entradas">Entradas</button></li>
+                <li class="nav-item"><button class="btn-header" id="btn-principal">Principal</button></li>
+                <li class="nav-item"><button class="btn-header" id="btn-postres">Postres</button></li>
+                <li class="nav-item"><button class="btn-header" id="btn-bebidas">Bebidas</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="menu">
+            <div class="todos-los-platos" id="plato">
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="entradas" src="img/entradas/bastones de mozzarella.png" alt="bastones-de-mozzarella">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Bastones de Mozarella</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="entradas" src="img/entradas/nachos.png" alt="nachos">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Nachos</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div>   
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="entradas" src="img/entradas/rabas.png" alt="rabas">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Rabas</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="principal" src="img/principal/costillar.png" alt="costillar">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Costillar</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="principal" src="img/principal/wrap.png" alt="wrap">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Wrap</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="principal" src="img/principal/ñoquis.png" alt="ñoquis">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Ñoquis</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="bebidas" src="img/bebidas/cervezas.png" alt="cerveza">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Cervezas</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div> 
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="bebidas" src="img/bebidas/gaseosas.png" alt="gaseosas">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Gaseosas</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="bebidas" src="img/bebidas/vinos.png" alt="vinos">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Vinos</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="Postres" src="img/postres/cheesecake.png" alt="cheesecake">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Cheesecake</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="postres" src="img/postres/mousse de chocolate.png" alt="mousse-de-chocolate">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Mousse de Chocolate</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="platos">
+                    <div class="plato-imagen">
+                        <img class="postres" src="img/postres/red velvet.png" alt="red-velvet">
+                    </div>
+                    <div class="plato-info">
+                        <div class="plato-contenedor">
+                            <h2 class="nombre">Red Velvet</h2>
+                            <p class="descripcion">plato muy rico</p>
+                        </div> 
+                        <div class="plato-precio">
+                            <p class="precio">$1000</p>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="pie-de-pag">
+        <p id="direccion"><b>Dirección:</b> Emilio lamarca 2062</p> 
+        <p id="telefono"><b>Tel.</b> 1128321943</p>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

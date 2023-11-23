@@ -2,66 +2,176 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
     font-family: sans-serif;
 }
 
-#titulo {
-    font-size: 100px;
-    padding: 40px;
-}
-
-#barraDeNavegacion {
-    text-align: center;
-    font-size: 30px;
-    padding: 20px;
-}
-
-.btn-nav {
-    padding: 15px;
-    font-size: 20px;
-    border-radius: 1rem;
-    background-color: black;
-    color: white;
-    border: none;
+button {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
 }
 
 body {
-    color: white;
+    min-height: 100vh;
     background-color: black;
-    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-shadow: 0 0 2rem -1rem rgba(255, 255, 255, .5);
+}
+
+#logo {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-header {
+    background-color: black;
+    padding: .5rem;
+    border-radius: 100vmax;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.btn-header:hover {
+    box-shadow: 0 0 2rem rgba(255, 255, 255, .25);
+    transform: scale(1.1);
+}
+
+.btn-header {
+    background-color: black;
+    color: white;
+}
+
+main {
+    padding: 2rem;
     max-width: 1000px;
-    min-width: 400px;
     margin: 0 auto;
 }
 
-.entradas {
-    border-radius: 1rem;
-    width: 300px;
-    height: 250px;
-    padding: .5rem;
-    margin: 0 auto;
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 
-.principal {
-    border-radius: 1rem;
-    width: 300px;
-    height: 250px;
-    padding: .5rem;
-    margin: 0 auto;
+.todos-los-platos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
 }
 
-.bebidas {
-    border-radius: 1rem;
-    width: 300px;
-    height: 250px;
-    padding: .5rem;
-    margin: 0 auto;
+
+@media screen and (max-width: 431px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
+    .todos-los-platos {
+        grid-template-columns: 1fr;
+    }
 }
 
-.postres {
+.platos {
     border-radius: 1rem;
-    width: 300px;
-    height: 250px;
-    padding: .5rem;
-    margin: 0 auto;
+    background-color: black;
+    padding-block: 1rem;
+}
+
+.plato-imagen {
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.plato-imagen img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.plato-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-inline: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.plato-contenedor {
+    align-items: center;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plato-precio {
+    font-weight: 600 ;
+}
+
+.pie-de-pag {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
